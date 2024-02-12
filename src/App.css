@@ -1,38 +1,249 @@
-.App {
-  text-align: center;
+.btn-light {
+  background-color: rgb(25, 170, 237) !important;
+  color: white !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-light:hover {
+  color: rgb(25, 170, 237) !important;
+  background-color: white !important;
+  border: 2px solid rgb(25, 170, 237) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navmargin {
+  margin-left: 100px !important;
+  margin-right: 100px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dropdown-menu {
+  border-bottom: 4px solid rgb(25, 170, 237) !important;
+}
+.contactHead {
+  background-color: rgb(241, 117, 35) !important;
+}
+
+.iconbtn {
+  background-color: white !important;
+  color: rgb(25, 170, 237) !important;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.iconbtn:hover {
+  background-color: rgb(25, 170, 237) !important;
+  color: white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text-custom {
+  color: rgb(25, 170, 237) !important;
+}
+
+.bg-custom1 {
+  background-color: rgb(25, 170, 237) !important;
+}
+
+.bg-custom2 {
+  background-color: rgb(2, 161, 73) !important;
+}
+
+.bg-custom3 {
+  background-color: rgb(241, 117, 35) !important;
+}
+
+.bg-custom4 {
+  background-color: rgb(26, 74, 140) !important;
+}
+
+.bg-custom5 {
+  background-color: rgb(255,212,1) !important;
+}
+
+
+.marginPolicypositions {
+  margin-top: 200px !important;
+  margin-bottom: 20px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.np {
+  padding: 0px;
+}
+
+.featuredPropBox {
+}
+
+.featuredPropBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: outside none none;
+  padding: 0;
+}
+
+.featuredPropBox ul li {
+  background-color: #eeeeee;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 320px;
+  /* margin: 5px; */
+  width: 20%;
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.featuredPropBox ul li:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(22, 22, 22, 0.6);
+  transition: all 0.3s;
+}
+
+.featuredPropBox ul li:nth-child(1) {
+  background-image: url("./Assets/Image/Ideological_Image1.jpg");
+}
+
+.featuredPropBox ul li:nth-child(2) {
+  background-image: url("./Assets/Image/Ideological_Image2.jpg");
+}
+
+.featuredPropBox ul li:nth-child(3) {
+  background-image: url("./Assets/Image/Ideological_Image3.avif");
+}
+
+.featuredPropBox ul li:nth-child(4) {
+  background-image: url("./Assets/Image/Ideological_Image4.jpg");
+}
+.featuredPropBox ul li:nth-child(5) {
+  background-image: url("./Assets/Image/Ideological_Image5.jpg");
+}
+
+.featuredPropBox ul li .fplogo {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.featuredPropBox ul li .fplogo img {
+  width: 100%;
+}
+
+.featuredPropBox ul li .fptext {
+  display: none;
+  font-size: 16px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease 0s;
+  width: 65%;
+  z-index: 1;
+}
+
+.featuredPropBox ul li .fptext p {
+  color: #fff;
+  margin: 0px;
+}
+
+.featuredPropBox ul li:hover {
+  box-shadow: 0 0 0 25px rgba(0, 0, 0, 0.2) inset;
+}
+
+.featuredPropBox ul li:hover:after {
+  background-color: rgba(22, 22, 22, 0.3);
+}
+
+.featuredPropBox ul li:hover .fplogo {
+  display: none;
+}
+
+.featuredPropBox ul li:hover .fptext {
+  display: block;
+}
+
+
+
+.Support_Activities {
+    background-image: url(../public/SupportOurActivities.mp4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    /* background-position: center; */
+    height: 300px;
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .wrapper:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 300px;
   }
+  
+
+  .bg-video-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+    background: url(https://designsupply-web.com/samplecontent/vender/codepen/20181014.png) no-repeat center center/cover;
+  }
+  video {
+    min-width: 100%;
+    min-height: 600px;
+    z-index: 1;
+    transform: scale(2, 2);
+  }
+  .overlay {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
+    background-size: 3px 3px;
+    z-index: 2;
+  }
+  .overlayText {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
+    /* bottom: 0; */
+    /* left: 0;
+    right: 0; */
+    margin: auto;
+    z-index: 3;
+    max-width: 400px;
+    width: 100%;
+    height: 50px;
+  }
+
+  .boxabout img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+
+              
+.border-custom{
+  border-bottom: 10px solid  rgb(25, 170, 237) !important;
 }
